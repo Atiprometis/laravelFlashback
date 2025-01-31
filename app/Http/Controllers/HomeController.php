@@ -8,6 +8,6 @@ class HomeController extends Controller
 {
     public function showpage()
     {
-        return view('home.page2');
+        return view('home.homepage');
     }
 }

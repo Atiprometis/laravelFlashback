@@ -13,8 +13,10 @@ class getProducts extends Controller
 
         if($respon->successful()){
             $products = $respon->json()['products'];
-            return view('home.homepage', compact('products'));
+            return view('product.productpage', compact('products'));
     }
     return[];
     }
+
+
 }
