@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-lg-3 m-0 p-0">
             <ul class="m-0 p-0" style="width: 100%; height: 100px;">
-                <li>Menu 1
+                <li>Menu 0
                     <ul class="dropdown-content">
                         <li>Submenu 1-1</li>
                         <li>Submenu 1-2</li>
@@ -60,7 +60,21 @@
 
 <script>
 
-
+$(document).ready(function(){
+        let product = [];
+        $.ajax({
+            url: "https://dummyjson.com/products",
+            type: "GET",
+            dataType: "json",
+            success: function(response) {
+                product = response.products;
+                console.log(product);
+            },
+            error: function(xhr, status, error) {
+                console.error("AJAX Error:", error);
+            }
+        });
+    });
 </script>
 
 @endsection

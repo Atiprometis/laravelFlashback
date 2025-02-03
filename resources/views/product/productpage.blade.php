@@ -35,19 +35,19 @@
 
 <script>
     $(document).ready(function(){
-        let product = [];
-        $.ajax({
-            url: "https://dummyjson.com/products",
-            type: "GET",
-            dataType: "json",
-            success: function(response) {
-                product = response.products;
-                console.log(product);
-            },
-            error: function(xhr, status, error) {
-                console.error("AJAX Error:", error);
-            }
-        });
+        // let product = [];
+        // $.ajax({
+        //     url: "https://dummyjson.com/products",
+        //     type: "GET",
+        //     dataType: "json",
+        //     success: function(response) {
+        //         product = response.products;
+        //         console.log(product);
+        //     },
+        //     error: function(xhr, status, error) {
+        //         console.error("AJAX Error:", error);
+        //     }
+        // });
     });
 
 

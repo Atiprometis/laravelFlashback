@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\getProducts;
+use App\Http\Controllers\aboutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[HomeController::class,'showpage']);
 
 Route::get('/product',[getProducts::class,'showProducts']);
+
+Route::get('/about', [aboutController::class,'index']);
+Route::post('/insertabout', [aboutController::class,'insertabout']);
+
